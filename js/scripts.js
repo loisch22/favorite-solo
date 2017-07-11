@@ -1,15 +1,12 @@
 $(document).ready(function() {
-  $("#form1").submit(function(event) {
+  $("#formOne").submit(function(event) {
     event.preventDefault();
-    var topic1Input = $("#topic1").val();
-    $("#form2").show();
-    $("#form1").hide();
-    $(".topic1").append(topic1Input);
-  });
-  $("#form2").submit(function(event) {
-    event.preventDefault();
-    var list1Input = $("ul#list1").val();
-    $(".list1").show();
-    $(".list1").append(list1Input);
+    var favThings = ["fav1", "fav2", "fav3", "fav4", "fav5"];
+
+    favThings.forEach(function(favThing) {
+      var allFavThings = $("input#" + favThing).val();
+      $(".confirm").show();
+      $(".allFavs").append("<li>" + allFavThings + "</li>");
+    });
   });
 });

@@ -15,41 +15,38 @@
       </div>
 
       <div class="well">
-        <h2>Fill out the form below to organize your favorite things:</h2>
+        <h2>Enter your favorite things:</h2>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="fav1">1.</label>
+            <input id="fav1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="fav2">2.</label>
+            <input id="fav2" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="fav3">3.</label>
+            <input id="fav3" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="fav4">4.</label>
+            <input id="fav4" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="fav5">5.</label>
+            <input id="fav5" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
       </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Create a Custom List:</h3>
-        </div>
-        <div class="panel-body">
-          <form id="form1">
-            <div class="form-group">
-              <label for="topic1">Enter Topic:</label>
-              <input id="topic1" class="form-control"type="text">
-            </div>
+      <div class="confirm">
+        <h3>Your Top 3 Favorites</h3>
+        <ul class="allFavs">
 
-            <button id="submit" class="btn btn-default">Enter</button>
-          </form>
-
-          <form id="form2">
-            <div class="form-group">
-              <label for="list1">Enter List Items:</label>
-              <input id="list1" class="form-control"type="text">
-            </div>
-
-            <button id="submit" class="btn btn-default">Enter</button>
-
-            <div class="topic-1-hide">
-              <h2 class="topic1"> </h2>
-              <ul class="list1">
-
-              </ul>
-            </div>
-          </form>
-        </div>
+        </ul>
       </div>
-
     </div>
   </body>
 </html>
